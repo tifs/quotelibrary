@@ -1,0 +1,18 @@
+{
+  "name": "quotelibrary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.9.1",
+    "express": "^4.10.0",
+    "pg": "^3.6.2",
+    "sequelize": "^2.0.0-rc2",
+    "sequelize-cli": "^0.3.3"
+  }
+}
