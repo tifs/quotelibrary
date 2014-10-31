@@ -3,10 +3,25 @@
 var fs        = require("fs");
 var path      = require("path");
 var Sequelize = require("sequelize");
-var env       = process.env.NODE_ENV || "development";
+var env      = process.env.NODE_ENV || "development";
 var config    = require(__dirname + '/../config/config.json')[env];
-var sequelize = new Sequelize(config.database, config.username, config.password, config);
 var db        = {};
+var sequelize;
+var match;
+
+if (process.env.DATABASE_URL) {
+  match = process.env.DATABASE_URL.match(/postgres:\/\/([^:]+):([^@]+)@([^:]+):(\d+)\/(.+)/)
+
+  sequelize = new Sequelize(match[5], match[1], match[2], {
+    dialect:  'postgres',
+    protocol: 'postgres',
+    port:    match[4],
+    host:    match[3],
+    logging:  true //false
+  });
+} else {
+  sequelize = new Sequelize(config.database, config.username, config.password, config);
+}
 
 fs
   .readdirSync(__dirname)
@@ -23,6 +38,11 @@ Object.keys(db).forEach(function(modelName) {
     db[modelName].associate(db);
   }
 });
+
+db.sequelize = sequelize;
+db.Sequelize = Sequelize;
+
+module.exports = db;
 
 
 // db.Author.create({firstname: "Jeff", lastname: "Griggs"});
@@ -414,9 +434,3 @@ Object.keys(db).forEach(function(modelName) {
 // db.Quote.create({text: "Be slow to criticize and quick to commend.", BookId: 21});
 // db.Quote.create({text: "Do not mistake activity for achievement.", BookId: 21});
 // db.Quote.create({text: "Forget favors given; remember those received.", BookId: 21});
-
-
-db.sequelize = sequelize;
-db.Sequelize = Sequelize;
-
-module.exports = db;
