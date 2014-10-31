@@ -1,0 +1,125 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '--save', 'underscore' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 warn package.json quotelibrary@1.0.0 No description
+5 warn package.json quotelibrary@1.0.0 No repository field.
+6 warn package.json quotelibrary@1.0.0 No README data
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'underscore', null ]
+9 verbose cache add name=undefined spec="underscore" args=["underscore",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'underscore',
+10 verbose parsed url   path: 'underscore',
+10 verbose parsed url   href: 'underscore' }
+11 silly lockFile 64bc6893-underscore underscore
+12 verbose lock underscore /Users/tifslama/.npm/64bc6893-underscore.lock
+13 silly lockFile 64bc6893-underscore underscore
+14 silly lockFile 64bc6893-underscore underscore
+15 verbose addNamed [ 'underscore', '' ]
+16 verbose addNamed [ null, '*' ]
+17 silly lockFile 7629b758-underscore underscore@
+18 verbose lock underscore@ /Users/tifslama/.npm/7629b758-underscore.lock
+19 silly addNameRange { name: 'underscore', range: '*', hasData: false }
+20 verbose request where is /underscore
+21 verbose request registry https://registry.npmjs.org/
+22 verbose request id 0d009612ae0bb33f
+23 verbose url raw /underscore
+24 verbose url resolving [ 'https://registry.npmjs.org/', './underscore' ]
+25 verbose url resolved https://registry.npmjs.org/underscore
+26 verbose request where is https://registry.npmjs.org/underscore
+27 info trying registry request attempt 1 at 19:32:53
+28 verbose etag "7UG37DML2EUMKWEC9HASNAXUI"
+29 http GET https://registry.npmjs.org/underscore
+30 http 200 https://registry.npmjs.org/underscore
+31 silly registry.get cb [ 200,
+31 silly registry.get   { date: 'Wed, 29 Oct 2014 02:32:53 GMT',
+31 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     etag: '"3U3L3XQXK6N2047DFWI14HFWJ"',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=60',
+31 silly registry.get     'content-length': '33059',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '45',
+31 silly registry.get     'x-served-by': 'cache-sjc3134-SJC',
+31 silly registry.get     'x-cache': 'HIT',
+31 silly registry.get     'x-cache-hits': '2',
+31 silly registry.get     'x-timer': 'S1414549973.990586,VS0,VE0',
+31 silly registry.get     vary: 'Accept',
+31 silly registry.get     'keep-alive': 'timeout=10, max=50',
+31 silly registry.get     connection: 'Keep-Alive' } ]
+32 silly addNameRange number 2 { name: 'underscore', range: '*', hasData: true }
+33 silly addNameRange versions [ 'underscore',
+33 silly addNameRange   [ '1.0.3',
+33 silly addNameRange     '1.0.4',
+33 silly addNameRange     '1.1.0',
+33 silly addNameRange     '1.1.1',
+33 silly addNameRange     '1.1.2',
+33 silly addNameRange     '1.1.3',
+33 silly addNameRange     '1.1.4',
+33 silly addNameRange     '1.1.5',
+33 silly addNameRange     '1.1.6',
+33 silly addNameRange     '1.1.7',
+33 silly addNameRange     '1.2.0',
+33 silly addNameRange     '1.2.1',
+33 silly addNameRange     '1.2.2',
+33 silly addNameRange     '1.2.3',
+33 silly addNameRange     '1.2.4',
+33 silly addNameRange     '1.3.0',
+33 silly addNameRange     '1.3.1',
+33 silly addNameRange     '1.3.2',
+33 silly addNameRange     '1.3.3',
+33 silly addNameRange     '1.4.0',
+33 silly addNameRange     '1.4.1',
+33 silly addNameRange     '1.4.2',
+33 silly addNameRange     '1.4.3',
+33 silly addNameRange     '1.4.4',
+33 silly addNameRange     '1.5.0',
+33 silly addNameRange     '1.5.1',
+33 silly addNameRange     '1.5.2',
+33 silly addNameRange     '1.6.0',
+33 silly addNameRange     '1.7.0' ] ]
+34 verbose addNamed [ 'underscore', '1.7.0' ]
+35 verbose addNamed [ '1.7.0', '1.7.0' ]
+36 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+37 verbose lock underscore@1.7.0 /Users/tifslama/.npm/900da168-underscore-1-7-0.lock
+38 silly lockFile 0bc9860b--underscore-underscore-1-7-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz
+39 verbose lock https://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz /Users/tifslama/.npm/0bc9860b--underscore-underscore-1-7-0-tgz.lock
+40 verbose addRemoteTarball [ 'https://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz',
+40 verbose addRemoteTarball   '6bbaf0877500d36be34ecaa584e0db9fef035209' ]
+41 info retry fetch attempt 1 at 19:32:54
+42 verbose fetch to= /var/folders/92/tc0k4l6d3qscmpm_pmj0_ct40000gn/T/npm-59688-kGmhJhQv/registry.npmjs.org/underscore/-/underscore-1.7.0.tgz
+43 http GET https://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz
+44 http 200 https://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz
+45 silly lockFile 0bc9860b--underscore-underscore-1-7-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz
+46 silly lockFile 0bc9860b--underscore-underscore-1-7-0-tgz https://registry.npmjs.org/underscore/-/underscore-1.7.0.tgz
+47 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+48 silly lockFile 900da168-underscore-1-7-0 underscore@1.7.0
+49 silly lockFile 7629b758-underscore underscore@
+50 silly lockFile 7629b758-underscore underscore@
+51 error Error: EACCES, mkdir '/Users/tifslama/.npm/underscore/1.7.0'
+51 error  { [Error: EACCES, mkdir '/Users/tifslama/.npm/underscore/1.7.0']
+51 error   errno: 3,
+51 error   code: 'EACCES',
+51 error   path: '/Users/tifslama/.npm/underscore/1.7.0',
+51 error   parent: 'quotelibrary' }
+52 error Please try running this command again as root/Administrator.
+53 error System Darwin 13.4.0
+54 error command "node" "/usr/local/bin/npm" "install" "--save" "underscore"
+55 error cwd /Users/tifslama/Code/week5/quotelibrary
+56 error node -v v0.10.32
+57 error npm -v 1.4.28
+58 error path /Users/tifslama/.npm/underscore/1.7.0
+59 error code EACCES
+60 error errno 3
+61 error stack Error: EACCES, mkdir '/Users/tifslama/.npm/underscore/1.7.0'
+62 verbose exit [ 3, true ]

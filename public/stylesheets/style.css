@@ -1,0 +1,248 @@
+body {
+	margin: 0;
+	/*font-family: 'Merriweather', serif;*/
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	background-color: rgba(224, 244, 245, 1);
+}
+
+nav {
+	width: 100%;
+	position: fixed;
+}
+
+.modal-btn {
+	display: inline;
+	width: 100px;
+	height: 30px;
+	margin: 0 auto;
+	border: none;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: rgba(256, 256, 256, 1);
+	font-size: 1.8em;
+}
+
+#library-btn {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	border: none;
+	background-color: rgba(256, 256, 256, 1);
+	font-size: 3.7em;
+	font-family: 'Josefin Slab', serif;
+}
+
+#column-left{
+	position: fixed;
+	left: 0;
+	width: 14%;
+	text-align: left;
+	z-index: 1;
+}
+
+#column-right{
+	position: fixed;
+	right: 0;
+	top: 1px;
+	width: 21%;
+	text-align: right;
+	z-index: 1;
+}
+
+.centered-buttons {
+	text-align: center;
+}
+
+#column-center {
+	width: 96%;
+	margin: auto;
+	margin-top: 65px;
+	cursor: pointer;
+}
+
+.quotes {
+	display: inline;
+	font-size: 1.1em;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(256, 256, 256, 1);
+}
+
+.authors, .books {
+	width: 100%;
+	max-height: 100%;
+	line-height: 1.22em;
+	padding-right: 0.2em;
+	padding-left: 0.2em;
+	word-spacing: 0.1em;
+	display: inline;
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+	font-size: 2.5em;
+	background-color: rgba(256, 256, 256, 1);
+}
+
+a:hover, a:active, .authors:hover, .authors:active, .books:hover, .books:active, .quotes:hover, .quotes:active, .selected {
+	color: white;
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+/* styling for the search box that doesn't work and we don't need yet */
+/*#search-box {
+	position: fixed;
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+	margin-top: 3%;
+	padding-left: 1em;
+	height: 3em;
+	font-size: 2em;
+	border: 0px;
+	border-radius: 10px;
+	background-color: rgba(256, 256, 256, 0.6);	
+}*/
+
+
+
+.yellow {
+	color: white;
+	background-color: rgba(245, 245, 25, 1); 
+}
+
+.deep-orange {
+	color: white;
+	background-color: rgba(255, 76, 30, 1);
+}
+
+.burnt-orange {
+	color: white;
+	background-color: rgba(246, 164, 31, 1);
+}
+
+.indigo {
+	color: white;
+	background-color: rgba(64, 64, 191, 1);
+}
+
+.old-green {
+	color: white;
+	background-color: rgba(102, 195, 156, 1);
+}
+
+.new-green {
+	color: white;
+	background-color: rgba(140, 255, 44, 1); 
+}
+
+.light-blue {
+	color: white;
+	background-color: rgba(86, 209, 234, 1); 
+}
+
+.brick-red {
+	color: white;
+	background-color: rgba(227, 8, 57, 1);
+}
+
+.purple {
+	color: white;
+	background-color: rgba(157, 100, 255, 1); 
+}
+
+.leaf-green {
+	color: white;
+	background-color: rgba(18, 189, 25, 1);
+}
+
+
+
+
+
+/*.c1 {
+	color: white;
+	font-family: 'Vollkorn', serif;
+	background-color: rgba(245, 245, 25, 1); 
+	font-size: 1.7em;
+	line-height: 0.8em;
+}
+
+.c2 {
+	color: white;
+	font-family: 'PT Mono', sans-serif;
+	background-color: rgba(255, 64, 191, 1); 
+	line-height: 1.5em;
+}
+
+.c3 {
+	color: white;
+	background-color: rgba(255, 76, 30, 1);
+	font-size: 0.9em; 
+	line-height: 1em;
+}
+
+.c4 {
+	color: white;
+	background-color: rgba(246, 164, 31, 1); 
+	font-size: 2.5em;
+}
+
+.c5 {
+	color: white;
+	background-color: rgba(64, 64, 191, 1); 
+}
+
+.c6 {
+	color: white;
+	background-color: rgba(102, 195, 156, 1); 
+	font-family: 'PT Mono', sans-serif;	
+}
+
+.c7 {
+	color: white;
+	background-color: rgba(140, 255, 44, 1); 
+}
+
+.c8 {
+	color: white;
+	background-color: rgba(86, 209, 234, 1); 
+	font-family: 'Vollkorn', serif;
+	font-size: 1.4em;
+}
+
+.c9 {
+	color: white;
+	background-color: rgba(227, 8, 57, 1); 
+	font-family: 'PT Mono', sans-serif;
+	font-size: 2.5em;
+}
+
+.c10 {
+	color: white;
+	background-color: rgba(157, 100, 255, 1); 
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+.c11 {
+	color: white;
+	background-color: rgba(18, 189, 25, 1);
+	font-family: 'Vollkorn', serif;
+	line-height: 1.8em;
+}*/
+
+.transformed {
+	font-size: 4.5em;
+	color: rgba(0, 0, 0, 1);
+	background-color: rgba(256, 256, 256, 1);
+	margin-left: 14%;
+	margin-right: 22%;
+	width: 64%;
+	text-align: left;
+	display: block;
+	z-index: 1000;
+}
