@@ -1,0 +1,30 @@
+<div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- <div class="modal-header"> -->
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Log in</h4>
+      <!-- </div> -->
+      <div class="modal-body">
+      	<form action="/login" method="post">
+					<h4>
+						<label for="user">username:</label> <input type="text" name="username" id="user" >
+					</h4>
+					<h4>
+						<label for="pass">password:</label> <input type="password" name="password" id="pass">
+					</h4>
+					<h4>
+						<input type="submit" value="log in" class ="btn btn-lg btn-default">
+					</h4>
+				</form>
+				<h4>
+					<a href="/signup">Don't have an account? Create one here</a>
+				</h4>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
