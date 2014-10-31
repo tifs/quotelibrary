@@ -50,7 +50,7 @@ passport.deserializeUser(function(id, done){
 });
 
 // my routes, with routeMiddleware shorthand
-app.get('/', routeMiddleware.checkAuthentication, function(req,res){
+app.get('/', function(req,res){
 	db.Author.findAll().done(function(err, authors){
 		console.log("IS ANYBODY THERE???")
 		console.log(authors)
@@ -65,6 +65,23 @@ app.get('/', routeMiddleware.checkAuthentication, function(req,res){
 		});
 	});
 });
+
+// my routes, with routeMiddleware shorthand
+// app.get('/', routeMiddleware.checkAuthentication, function(req,res){
+// 	db.Author.findAll().done(function(err, authors){
+// 		console.log("IS ANYBODY THERE???")
+// 		console.log(authors)
+		
+// 		db.Book.findAll().done(function(error, books){
+// 			console.log("found authors", books);
+// 			db.Quote.findAll().done(function(error, quotes){
+// 				db.Author.find(req.params.id).done(function(err,selectedAuthor){
+// 				res.render('index', {authors:authors, books:books, quotes:quotes, selectedAuthor:selectedAuthor});		
+// 				});
+// 			});
+// 		});
+// 	});
+// });
 
 app.get('/authors/:id', function(req,res){
 	var singleBookQuotes = [];
