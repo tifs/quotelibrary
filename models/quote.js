@@ -2,7 +2,8 @@
 
 module.exports = function(sequelize, DataTypes) {
   var Quote = sequelize.define("Quote", {
-    text: DataTypes.TEXT
+    text: DataTypes.TEXT,
+    BookId: DataTypes.INTEGER
   }, {
     classMethods: {
       associate: function(models) {

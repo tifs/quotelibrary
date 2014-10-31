@@ -22,6 +22,7 @@ module.exports = {
         allowNull: false,
         type: DataTypes.DATE
       }
+
     }).done(done);
   },
   down: function(migration, DataTypes, done) {

@@ -18,6 +18,10 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: DataTypes.DATE
+      },
+      BookId:{
+        type: DataTypes.INTEGER,
+        foreignKey: true
       }
     }).done(done);
   },

@@ -18,6 +18,10 @@ module.exports = {
       updatedAt: {
         allowNull: false,
         type: DataTypes.DATE
+      },
+      AuthorId: {
+        type: DataTypes.INTEGER,
+        foreignKey: true
       }
     }).done(done);
   },

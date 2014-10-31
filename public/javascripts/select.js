@@ -1,3 +1,4 @@
+// search box that doesn't work and we don't need yet
 // $(function() {
 // 	$('#search-box').keyup(function() {
 // 		var query = $(this).val();
@@ -7,29 +8,35 @@
 // 	});
 // });
 
-
-$('.authors').click(function(){
-	var author = $(this).text();
-	console.log(author);
-	$('.books').each(function() {
-		$('.quotes').each(function() {
-			$(this).toggle(('author') === author);
-		});
-	});
-});
-
-
-$('.authors').click(function(){
-	// alert("IT WORKS SORT OF!!!");
-});
-
-
-$('.quotes').click(function() {
-	console.log("Hello!");
-	$(this).toggleClass('selected');
-});
-
-
-// $('#column-left').click(function(){
-// 	alert("IT WORKS SORT OF!!!");
+// author selector - WE BUILT THIS ON THE BACKEND!
+// $('.authors').click(function(){
+// 	var author = $(this).text();
+// 	console.log(author);
+// 	$(this).toggleClass('selected');
 // });
+
+// book selector - WE BUILT THIS ON THE BACKEND TOO!!!
+// $('.books').click(function(){
+// 	var book = $(this).text();
+// 	console.log(book);
+// 	$(this).toggleClass('selected');
+// });
+
+
+
+// quote selector
+$('.quotes').click(function(){
+	var quote = $(this).text();
+	var book = $(this).BookId;
+	$(this).toggleClass('transformed');
+});
+
+// random colors for the quotes inside the center column
+$( function (){
+    $( "#column-center div" ).each( function (){
+        var rng = Math.round(Math.random()*9);
+        var rndmClass = [ 'yellow', 'deep-orange', 'burnt-orange', 'indigo', 'old-green', 'new-green', 'light-blue', 'brick-red', 'purple', 'leaf-green' ];
+
+        $(this).addClass( rndmClass[rng]);
+    });
+});

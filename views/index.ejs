@@ -1,5 +1,45 @@
 <% include partials/head %>
 
-<h1>Here's the index page!</h1>
+	<nav>
+		<button id="library-btn">
+			<a href="/">The Colorful Quote Machine</a>
+		</button>
+		<br>
+		<div class="centered-buttons">
+			<button class="modal-btn">
+				<a data-toggle="modal" data-target="#signUpModal">Sign up</a>
+			</button>
+			<button class="modal-btn">
+				<a data-toggle="modal" data-target="#logInModal">Log in</a>
+			</button>
+		</div>
+	</nav>
+
+<% include partials/signup_modal %>
+
+<% include partials/login_modal %>
+
+<div class="container-fluid">
+	<div id="column-left">
+		<% authors.forEach(function(author) { %>
+	  	<div class="authors">
+	  		<a href="/authors/<%=author.id%>"><%= author.firstname %> <%= author.lastname %></a>
+	  	</div>
+		<% }); %>
+	</div>
+	<div id="column-center">
+		<% quotes.forEach(function(quote) { %>
+	  	<div class="quotes"><%= quote.text %></div>
+		<% }); %>
+	</div>
+	<div id="column-right">
+		<% books.forEach(function(book) { %>
+			<div class="books">
+				<a href="/books/<%=book.id%>"><%= book.title %></div></a>
+		<% }); %>
+	</div>
+</div>
+
+
 
 <% include partials/foot %>
