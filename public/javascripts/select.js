@@ -29,7 +29,19 @@ $('.quotes').click(function(){
 	var quote = $(this).text();
 	var book = $(this).BookId;
 	$(this).toggleClass('transformed');
+	$('.quotes:not(this)').toggleClass('blur');
+	// $('body').not(this).toggleClass('blur');
+
 });
+
+// $('.quotes').click(function(){
+// 	var quote = $(this).text();
+// 	var book = $(this).BookId;
+//   $('.quotes').not(this).each(function(){
+//   	$(this).toggleClass('blur');
+//   });
+//      $(this).toggleClass('transformed');
+// });
 
 // random colors for the quotes inside the center column
 $( function (){
