@@ -29,7 +29,7 @@ $('.quotes').click(function(){
 	var quote = $(this).text();
 	var book = $(this).BookId;
 	$(this).toggleClass('transformed');
-	$('.quotes:not(this)').toggleClass('blur');
+	$('.quotes:not(this), #column-left, #column-right, nav').toggleClass('blur');
 	// $('body').not(this).toggleClass('blur');
 
 });
